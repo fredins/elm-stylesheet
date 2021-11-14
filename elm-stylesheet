@@ -1,0 +1,13 @@
+#! /bin/sh
+ds=$(echo $XDG_DATA_DIRS | tr ":" "\n")
+for d in $ds; do 
+  dir="${d}/elm-stylesheet"
+  if [ -d $dir ]; then
+    cp "${dir}/Main.elm"  "$1.elm"
+    sed -i "s/Main/$1/" "$1.elm"
+    cp "${dir}/styles.css"  .
+    exit
+  fi
+done
+echo "ERROR: unable to find directory elm-stylesheet in \$XDG_DATA_DIRS=$XDG_DATA_DIRS"
+
