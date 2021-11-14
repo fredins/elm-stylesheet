@@ -22,8 +22,8 @@ stylesheet =
     node tag attrs children
 
 
-view : Html msg
-view =
+main : Html msg
+main =
     div []
         [ stylesheet
         , div []
