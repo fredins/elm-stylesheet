@@ -10,7 +10,7 @@ Credit for the Main.elm file goes to [ronanyeah](https://gist.github.com/ronanye
 Clone the reposiory inside the XDG\_DATA\_DIRS, e.g. ~/.local/share/ . 
 Then copy the script to somewhere in PATH.
 ```
-cp elm-stylesheet  ~/.local/bin/scripts
+cp elm-stylesheet  ~/.local/bin/scripts/
 ```
 
 ### Usage
